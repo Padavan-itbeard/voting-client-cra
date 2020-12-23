@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Voting from './components/voting';
 import reportWebVitals from './reportWebVitals';
+
+const pair = ['Trainspotting', '28 Days Later'];
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Voting pair={pair}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
